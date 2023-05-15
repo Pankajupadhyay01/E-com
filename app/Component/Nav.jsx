@@ -57,12 +57,12 @@ const Nav = () => {
                 <div className='my-[20px]'>
 
                     <div className='space-y-5 list-none mx-10'>
-                        <li className='flex'> <span className='text-blue-500 mr-3'><AiOutlineHome /></span> Home</li>
-                        <li className='flex'> <span className='text-blue-500 mr-3'><AiOutlineContacts /></span> Contact</li>
-                        <li className='flex'>  Categories</li>
-                        <li className='flex'> <span className='text-blue-500 mr-3'><FaShuttleVan /></span>Order </li>
-                        <li className='flex'> <span className='text-blue-500 mr-3'><AiOutlineShoppingCart /></span> My Cart</li>
-                        <li className='flex'> <span className='text-blue-500 mr-3'><BsFillPersonFill /></span> My Account</li>
+                        <li className='flex'> <Link href="/"> <AiOutlineHome />  Home</Link></li>
+                        <li className='flex'> <Link href="/"> <AiOutlineContacts /> Contact</Link></li>
+                        <li className='flex'> <Link href="/"> Categories </Link>  </li>
+                        <li className='flex'> <Link href="/"> <FaShuttleVan /> Order </Link> </li>
+                        <li className='flex'> <Link href="/"> <AiOutlineShoppingCart />  My Cart/Link</Link></li>
+                        <li className='flex'> <Link href="/"> <BsFillPersonFill /> My Account</Link></li>
                     </div>
                 </div>
             </nav>

@@ -1,11 +1,12 @@
-import React from 'react';
+import Homedata from "./Component/Home/Homedata";
 
-const page = () => {
+ 
+const page = () => { 
   return (
-    <div>
-      
-    </div>
-  );
+      <div>
+          <Homedata/>         
+      </div>
+  )
 }
 
 export default page;
