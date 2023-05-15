@@ -1,5 +1,5 @@
 import React from 'react';
-import {AiTwotoneStar} from 'react-icons/Ai'
+import {AiTwotoneStar} from  'react-icons/ai'
 import Link from 'next/link';
 const Cards = ({main_img,title,desc,brand,price,rating,stock}) => {
   return (

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaBars, FaShuttleVan } from 'react-icons/fa';
 import { BsFillCartFill, BsFillPersonFill } from 'react-icons/bs'
-import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineShoppingCart } from 'react-icons/Ai'
+import { AiOutlineClose, AiOutlineContacts, AiOutlineHome, AiOutlineShoppingCart } from 'react-icons/ai'
 import { useState } from 'react';
 import Searchbar from './Search/Searchbar';
 
