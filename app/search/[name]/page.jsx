@@ -1,18 +1,10 @@
 import React from 'react';
 import Card from '@/app/Component/Home/Card';
 async function fetchurl(name) {
-    if (name==undefined) {
-        console.log("ok");
-    }
-    if(name.length==0){
-        alert("ok")
-    }
-    else{
        const res = await fetch(`https://dummyjson.com/products/search?q=${name}`);
+       await new Promise((resolve) => setTimeout(resolve,1000));
         const result = await res.json();
-        return result.products; 
-    }  
-    
+        return result.products;     
 }
 const page =async ({params:{ name }}) => { 
         const result= await fetchurl(name);  
@@ -22,7 +14,7 @@ const page =async ({params:{ name }}) => {
         {
             
             result.map((pro,i)=>(
-                <Card key={i} title={pro.title} id={pro.id} img={pro?.images[0]} price={pro.price} rating={pro.rating}/>
+                <Card key={i} result={pro}/>
             ))
         }
         </div>     

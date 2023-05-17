@@ -20,8 +20,8 @@ const Nav = () => {
                         <div onClick={func} className='text-blue-500 text-lg md:hidden flex'>
                             <FaBars />
                         </div>
-                        <div className="capitalize text-3xl md:text-2xl font-bold ">
-                            logo
+                        <div  className="capitalize text-3xl md:text-2xl font-bold ">
+                           <Link href="/">logo</Link> 
                         </div>
                     </div>
 
@@ -30,7 +30,7 @@ const Nav = () => {
                     </div>
 
                     <div className='flex items-center space-x-3'>
-                        <Link href="" className='text-blue-500 text-xl md:text-3xl'>
+                        <Link href="/cart" className='text-blue-500 text-xl md:text-3xl'>
                             <BsFillCartFill />
                         </Link>
                         <Link href="" className='border-[1px] border-gray-400 rounded-lg px-[10px] bg-blue-500 text-white py-[5px]'>
@@ -61,7 +61,7 @@ const Nav = () => {
                         <li className='flex'> <Link href="/"> <AiOutlineContacts /> Contact</Link></li>
                         <li className='flex'> <Link href="/"> Categories </Link>  </li>
                         <li className='flex'> <Link href="/"> <FaShuttleVan /> Order </Link> </li>
-                        <li className='flex'> <Link href="/"> <AiOutlineShoppingCart />  My Cart/Link</Link></li>
+                        <li className='flex'> <Link href="/cart"> <AiOutlineShoppingCart />  My Cart/Link</Link></li>
                         <li className='flex'> <Link href="/"> <BsFillPersonFill /> My Account</Link></li>
                     </div>
                 </div>
