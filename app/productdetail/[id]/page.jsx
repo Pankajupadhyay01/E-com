@@ -11,7 +11,6 @@ const page = async ({ params: { id } }) => {
   const result = await func(id);
   return (
     <div>
-      {/* <Cards main_img={result.thumbnail} brand={result.brand} price={result.price} rating={result.rating} cate={result.category} stock={result.stock}  desc={result.description} title={result.title} /> */}
       <Cards result={result} id={id}/>
     </div>
   );

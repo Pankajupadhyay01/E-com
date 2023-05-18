@@ -1,6 +1,6 @@
 import React from 'react';
 
-const page = () => {
+const Loadingpage = () => {
   return (
     <div className='m-auto items-center flex justify-center '>
       loading...
@@ -8,4 +8,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default Loadingpage;

@@ -6,7 +6,7 @@ async function fetchurl(name) {
         const result = await res.json();
         return result.products;     
 }
-const page =async ({params:{ name }}) => { 
+const page =async ({params:{name}}) => { 
         const result= await fetchurl(name);  
   return (
     <div>  
