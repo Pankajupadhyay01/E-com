@@ -12,7 +12,8 @@ const Homedata = async () => {
   const result = await fetchfunc(); 
   return (
     <div>
-      <div className='flex justify-center m-auto w-[80%] flex-wrap'> 
+      <div>All Products</div>
+      <div className='flex justify-center m-auto w-[80%] flex-wrap'>       
       {
         result.map((pro,i)=>(
           <>
