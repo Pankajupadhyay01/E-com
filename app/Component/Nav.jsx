@@ -15,7 +15,7 @@ const Nav = () => {
     return (
         <div>
             <nav className='bg-white shadow-black shadow-[0_0_10px] w-full py-2 space-y-4'>
-                <div className='flex justify-between md:mx-12 mx-[10px] items-center'>
+                <div className='flex justify-between md:mx-5 mx-[10px] items-center'>
                     <div className='flex items-center space-x-4'>
                         <div onClick={func} className='text-blue-500 text-lg md:hidden flex'>
                             <FaBars />
