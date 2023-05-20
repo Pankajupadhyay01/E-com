@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
 const Searchbar = () => {   
@@ -7,10 +7,16 @@ const Searchbar = () => {
     const [url, seturl] = useState();
     const [link, setlink] = useState("/");
     const func = (e) => {  
-            seturl(e.target.value)
+        seturl(e.target.value)
+        if (e.target.value=="") {
+            setlink('/')
+        }
+        else{
             setlink(`/search/${url}`)
+        }
+            
     }
-    
+
     const router = useRouter()
     const func_p = (e) => {
         e.preventDefault();
