@@ -11,10 +11,16 @@ const Nav = () => {
     const [open, setopen] = useState(false);
     const func = () => {
         setopen(!open)
+        if(!open){
+            document.body.style.overflow="hidden";
+        }
+        else{
+            document.body.style.overflow="auto"
+        }
     }
     return (
         <div>
-            <nav className='bg-white shadow-black shadow-[0_0_10px] w-full py-2 space-y-4'>
+            <nav className='bg-white shadow-black shadow-[0_0_10px]  w-full py-2 space-y-4'>
                 <div className='flex justify-between md:mx-5 mx-[10px] items-center'>
                     <div className='flex items-center space-x-4'>
                         <div onClick={func} className='text-blue-500 text-lg md:hidden flex'>
@@ -50,19 +56,19 @@ const Nav = () => {
             </nav>
 
             {/* sidebars  */}
-            <nav className={`${open ? "left-0" : "left-[-100%]"} fixed top-0 h-[100vh] w-[80%] bg-white`}>
+            <nav className={`${open ? "left-0" : "left-[-100%]"} z-[999] fixed top-0 h-[100vh] w-[80%] bg-white`}>
                 <div className='text-blue-500 text-2xl'>
                     <div className='absolute right-5' onClick={func}><AiOutlineClose /></div>
                 </div>
                 <div className='my-[20px]'>
 
                     <div className='space-y-5 list-none mx-10'>
-                        <li className='flex'> <Link href="/"> <AiOutlineHome />  Home</Link></li>
-                        <li className='flex'> <Link href="/"> <AiOutlineContacts /> Contact</Link></li>
-                        <li className='flex'> <Link href="/"> Categories </Link>  </li>
-                        <li className='flex'> <Link href="/"> <FaShuttleVan /> Order </Link> </li>
-                        <li className='flex'> <Link href="/cart"> <AiOutlineShoppingCart />  My Cart/Link</Link></li>
-                        <li className='flex'> <Link href="/"> <BsFillPersonFill /> My Account</Link></li>
+                        <li> <Link href="/" className='flex space-x-4 items-center text-lg text-gray-500 hover:text-blue-600'> <AiOutlineHome />  Home</Link></li>
+                        <li> <Link href="/" className='flex space-x-4 items-center text-lg text-gray-500 hover:text-blue-600'> <AiOutlineContacts /> Contact</Link></li>
+                        <li> <Link href="/" className='flex space-x-4 items-center text-lg text-gray-500 hover:text-blue-600'> Categories </Link>  </li>
+                        <li> <Link href="/" className='flex space-x-4 items-center text-lg text-gray-500 hover:text-blue-600'> <FaShuttleVan /> Order </Link> </li>
+                        <li> <Link href="/cart" className='flex space-x-4 items-center text-lg text-gray-500 hover:text-blue-600'> <AiOutlineShoppingCart />  My Cart/Link</Link></li>
+                        <li> <Link href="/" className='flex space-x-4 items-center text-lg text-gray-500 hover:text-blue-600'> <BsFillPersonFill /> My Account</Link></li>
                     </div>
                 </div>
             </nav>
