@@ -17,7 +17,7 @@ const Cards = ({result,id}) => {
             <div className='font-bold'>${result.price}</div>
              <div className='font-bold text-yellow-600 flex items-center'><AiTwotoneStar/>{result.rating>4.5?"Top Rated":result.rating} </div>
           </div>
-          <div className={`${result.stock<20?"text-red-500":"text-blue-500"}`}>{result.stock<20?"few stock left":"In Stock"}</div>
+          <div className={`${result.stock<35?"text-red-500":"text-blue-500"}`}>{result.stock<35?"few stock left":"In Stock"}</div>
           <div className='flex justify-center space-x-4 items-center'>
             <Link className='cursor-pointer border-2 rounded-[20px] p-[4px_12px] hover:bg-blue-400 hover:shadow-2xl text-white bg-[#388e3c]' href="">Add To Cart</Link>
             <Link className='cursor-pointer border-2 rounded-[20px] p-[4px_12px] hover:bg-blue-400 hover:shadow-2xl text-white bg-[#388e3c]' href={`/buy/${id}`}>Buy Now</Link>

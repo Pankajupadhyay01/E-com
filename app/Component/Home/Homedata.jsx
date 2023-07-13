@@ -6,6 +6,7 @@ const fetchfunc = async () => {
   const result = await res.json();
   return result.products;
 }
+
 const Homedata = async () => {
   const result = await fetchfunc();
   return (
@@ -20,6 +21,7 @@ const Homedata = async () => {
         {
           result.map((pro, i) => (
             <>
+            
               <Card key={i} result={pro} />
 
             </>
