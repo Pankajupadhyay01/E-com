@@ -7,7 +7,7 @@ const page =  ({ params: { id } }) => {
       <div className='flex my-4 flex-col md:flex-row w-[90%] md:w-[80%] justify-between m-auto items-center'>
         <div className='md:w-[60%] overflow-hidden'>
            <div className='bg-white flex flex-col'>
-              Oops,Not Implemented Yet ! {id}
+              Oops,Not Implemented Yet !
              <Link href="/" className='font-blue-400 font-semibold'> -- Back To Home  </Link> 
            </div>
         </div>
